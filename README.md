@@ -17,7 +17,7 @@ Feel free to test your solution with your own inputs as we don't provide local t
 
 POST, http://localhost:8080/user, Content-Type as application/json
 
-{ "name": "Justin Jia", "email": "[john.smith@example.com](mailto:john.smith@example.com)" }
+{ "name": "Justin Jia", "email": "[justin@example.com]" }
 
 POST,  http://localhost:8080/credit-card, Content-Type as application/json
 
