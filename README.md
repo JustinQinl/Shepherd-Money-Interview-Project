@@ -13,6 +13,21 @@ Feel free to test your solution with your own inputs as we don't provide local t
 ```bash
 ./gradlew bootRun
 ```
+**Testing**:
+
+POST, http://localhost:8080/user, Content-Type as application/json
+
+{ "name": "Justin Jia", "email": "[john.smith@example.com](mailto:john.smith@example.com)" }
+
+POST,  http://localhost:8080/credit-card, Content-Type as application/json
+
+{ "userId": 1, "cardIssuanceBank": "Bank of America", "cardNumber": "123456" }
+
+GET,  http://localhost:8080/credit-card:all?userId=1
+
+POST, http://localhost:8080/credit-card:update-balance, Content-Type as application/json
+
+[ { "creditCardNumber": "123456", "transactionAmount": 500.00, "transactionTime": "2023-04-24T08:00:00Z" } ]
 
 We will test your solution by calling the APIs directly. While correctness is important, we are more interested in how you designed the API and your coding practices, such as using clear variable names, good comments, and good naming conventions.
 
